@@ -1,33 +1,35 @@
-﻿string a = Console.ReadLine();
-if(a == "1")
+﻿int a = Convert.ToInt32(Console.ReadLine());
+switch (a)
 {
+    case 1:
     Console.WriteLine("Понедельник");
-}
-else if(a == "2")
-{
+    break;
+
+    case 2:
     Console.WriteLine("Вторник");
-}
-else if(a == "3")
-{
+    break;
+
+    case 3:
     Console.WriteLine("Среда");
-}
-else if(a == "4")
-{
+    break;
+
+    case 4:
     Console.WriteLine("Четверг");
-}
-else if(a == "5")
-{
+    break;
+
+    case 5:
     Console.WriteLine("Пятница");
-}
-else if(a == "6")
-{
+    break;
+
+    case 6:
     Console.WriteLine("Суббота");
-}
-else if(a == "7")
-{
+    break;
+
+    case 7:
     Console.WriteLine("Воскресенье");
-}
-else
-{
-    Console.WriteLine("неверное значение");    
+    break;
+
+    default:
+    Console.WriteLine("неверное значение");   
+    break; 
 }
