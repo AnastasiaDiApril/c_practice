@@ -14,7 +14,7 @@ void FillInRndNum(double[] arr, double lowerBound, double upperBound) {
     var generator = new Random();
     for(int i = 0; i < arr.Length; i++) {
         double rnd = generator.NextDouble();
-        arr[i] = rnd * (upperBound - lowerBound) + lowerBound;
+        arr[i] = Math.Round(rnd * (upperBound - lowerBound) + lowerBound, 1);;
     }
 };
 
