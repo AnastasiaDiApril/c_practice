@@ -4,10 +4,10 @@ const int N = 4;
 int[,] arr = new int[M, N];
 
 FillInRndNum(arr, 0, 20);
-PrintArrDouble(arr);
+PrintArrInt(arr);
 
 double[] avgByLine = CountAverageByLine(arr);
-PrintArrInt(avgByLine);
+PrintArrDouble(avgByLine);
 
 
 void FillInRndNum(int[,] arr, int lowerBound, int upperBound) {
@@ -19,7 +19,7 @@ void FillInRndNum(int[,] arr, int lowerBound, int upperBound) {
     }
 }
 
-void PrintArrDouble(int[,] arr) {
+void PrintArrInt(int[,] arr) {
     for(int i = 0; i < arr.GetLength(0); i++) {
         for (int j = 0; j < arr.GetLength(1); j++) {
             Console.Write($"{arr[i, j]} ");
@@ -28,7 +28,7 @@ void PrintArrDouble(int[,] arr) {
     }
 }
 
-void PrintArrInt(double[] arr) {
+void PrintArrDouble(double[] arr) {
     for(int i = 0; i < arr.Length; i++) {
         Console.Write($"{arr[i]} ");
     }
